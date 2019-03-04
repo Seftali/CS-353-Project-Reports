@@ -26,7 +26,7 @@ In this project, we are planning to design a system for people to host events fo
 2.Funtional and Non-Funtional Requirements
 2.1Functional Requirements
  
-Sign Up: People who want to become a member will sign up by creating a username and password. Also they will share additional info about themselves. Full name ,age, gender, address, profile picture, job and a brief description about themselves. During sign up process they will create their profile.
+**Sign Up**: People who want to become a member will sign up by creating a username and password. Also they will share additional info about themselves. Full name ,age, gender, address, profile picture, job and a brief description about themselves. During sign up process they will create their profile.
  
 Log In: If already a member, user will need to enter their username and password and log in.
  
