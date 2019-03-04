@@ -1,7 +1,7 @@
 # CS-353-Project-Reports
 # 
 
-![](https://github.com/Seftali/CS-353-Project-Reports/blob/master/Bilkent.gif)
+![](https://github.com/Seftali/CS-353-Project-Reports/blob/master/Bilkent.jpg)
 
 **CS 353 Project Proposal**
 
