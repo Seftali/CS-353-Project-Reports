@@ -1,6 +1,8 @@
 # CS-353-Project-Reports
 # 
 
+![](https://github.com/Seftali/CS-353-Project-Reports/blob/master/Bilkent.gif)
+
 **CS 353 Project Proposal**
 
 **Social Media for Hosting Events - Find&#39;N Meet**
