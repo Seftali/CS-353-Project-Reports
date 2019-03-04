@@ -58,6 +58,8 @@ In this project, we are planning to design a system for people to host events fo
 #  3. E/R Diagram
 
 
+![](https://github.com/Seftali/CS-353-Project-Reports/blob/master/ERdiagram.jpg)
+
 
 messaged(sender\_ID, receiver\_ID, context)
 
