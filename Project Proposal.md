@@ -63,7 +63,7 @@ In this section, the functional requirements will be mentioned. They are filing 
 #  3. E/R Diagram
 
 
-![](https://github.com/Seftali/CS-353-Project-Reports/blob/master/ERdiagram.jpeg)
+![](https://github.com/Seftali/CS-353-Project-Reports/blob/master/ERdiagram.jpg)
 
 
 complaints(complaintID, content, date)
