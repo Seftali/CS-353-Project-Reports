@@ -68,13 +68,13 @@ In this section, the functional requirements will be mentioned. They are filing 
 
 complaints(complaintID, content, date)
 
-CustomerServices(ServiceID)
+CustomerServices(extension)
 
 Employees(EmployeeID, name, email, phone)
 
 Conversation(convID, content, date)
 
-TechStaff(StaffID)
+TechStaff(departmentName)
 
 Customer(customerID, name, email, address)
 
