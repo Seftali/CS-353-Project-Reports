@@ -5,94 +5,104 @@
 
 **CS 353 Project Proposal**
 
-**Social Media for Hosting Events - Find&#39;N Meet**
+**Maintenance Data Management System - FixItUp**
 
-**Berk Ataç - 21200623 - Section 2**
+**Berk Ataç 	-		21200623 - Section 1**
 
-**Kaan Tapucu - 21402172 - Section 2**
+**Eren Ayture	-		21200559 - Section 1**
 
-**Melih Ünsal - 21501085 - Section 2**
+**Umut Balkan	-		21401911 - Section 1**
 
-**Engin Deniz - 21301826 - Section 2**
+**Derviş Mehmed Barutcu -	21302589 - Section 1**
 
 
 
 # 1.Project Description
 
-In this project, we are planning to design a system for people to host events for anybody having similar interests. We are going to have people, events, categories, cities, groups and messages entities so that we can come up with an entity-relation diagram for the system. Users of the system will be able to create a specific event according to their interests. Then, they can send invitations to their selected friends along with making the event public if desired. Events are specific to a particular location and time. It means that when an event is created, it will have start and end time as well as address information where it takes place.  Additionally, for each event, there is going to be quota for the event so that we can put a limit on participants so as not to encounter with any problem related to availability of the place. People who joined the event will be able to be reviewed by event hosters. Users will be able to create a group. Moreover, they will be able to share their comments to a group&#39;s forum as well as an event&#39;s forum. However, in order to make a comment to an event, they should participate to the event. For this project, we are going to use a database where all of the information of these entities are maintained. The reason why we are planning to use a database is that users will be using our system concurrently. It means that using a database rather than file system is rational. Most importantly, we need to prevent data redundancy and inconsistency by making use of creating a database system.
+In this project, we are going to design a database for maintenance department of a company. We have customers, employees, technical staff, products, categories, complaints, repairments, and so on. Customers should be able to file a request for repairments of their products. Whole process should be kept track of to monitor progress in each step. Customers can also file a complaint about products. Such complaints should be handled by customer services. Conversation between customers and employees should also be recorded.
+
 
 # 2.Funtional and Non-Funtional Requirements
 
 2.1Functional Requirements
 
-**Sign Up:** People who want to become a member will sign up by creating a username and password. Also they will share additional info about themselves. Full name ,age, gender, address, profile picture, job and a brief description about themselves. During sign up process they will create their profile.
+In this section, the functional requirements will be mentioned. They are filing a request for the repairment of their product, filing a complaint about product, suggestions, monitoring the processes and chatting mechanism. All these functions can happen after they login to the system.
 
-**Log In:** If already a member, user will need to enter their username and password and log in.
+**File a Request for Repairment** After they log in to the website, they can request a repairment of their products. When they request a repairment, the system skips the related page of the website. Their information such as name and the product or products that they have, will be automatically pasted to relative parts but they also should fill some parts. They must select the product that they will request a repairment then the system shows the related information about that product like the name of the product, brand, model, specifications and the date of purchase. According to the date of purchase, if that product has a guarantee or not will be shown. After they select the product, they must enter the problem with the product. This information will help the relevant departments and the process will be faster. After they fill the problem section, they can send a request for that device.
 
-**Join Event:** Users will circle through events according to their choice of category, address and will be able join or request to join an event based on the privacy setting on an event and its remaining quota.
 
-**Create Event:** Users will be able create events for other users to join. They will enter event&#39;s name, address, time slot, quota, description, a picture and privacy setting. Privacy setting can either be public or private. Any user can see and join or request to join public events. Not all users will be able to see private events. User will need to get an invite for seeing and joining private events.
+**File a Complaint** When they want to complain about the product, they need to click the relative button. The system will load the required page. As happen in file a request for repairment system, some of the information will be automatically loaded. Then they should select the product that they will complain about and fill the extra information on why they have complaints about the product. After they finish filling the information, they can send complaints.
 
-**Create Group:** Users will be able to form groups with other users with similar interests and their friends. Forming a group will require entering groups name, category, description and a picture. Other users can get an invite or send a request to join in groups.
 
-**Join Group:** Users will be able join a group with interests similar to theirs by getting an invite or by sending a request to join. Group admin will either send invites or accept requests in order for users to join.
+**Suggestion** After they file a complaint about the product, the system shows some of the frequently asked questions and their answers are given by the company. If it will help them to solve their problems, they can withdraw their complaints but if they do not find a solution, they do not need to do anything.
 
-**Send Message:** Users will be able to communicate with each other by sending messages. User will select another user and send them a message which only sender and recipient can see.
 
-**Comment:** Users will be able to address to more than one user with comments. They will either comment on event pages or group pages in order to ask questions, share their opinion or general communication.
+**Monitoring the processes** They can monitor the processes that they have requested. The system will show the ongoing processes in the main page. However, it will be just a summary of the process or processes. If they want to see more detailed information about their request for repairment or complaints, they can click the processes button to pass the process page to see all their processes in detailed.
 
-**Choosing a Category:** Users will click on the category option in order to search for an event or a group under that category.
+
+**Chatting mechanism** After they complain about their product, if it is necessary, the customer services will send a message to the user to start a conversation. This chatting will be recorded at the database and will be secure. The customer can talk through the system and complain more about the product. At the same time, the customer services will ask questions more about their problem to understand and give better service and make suggests about to get rid of their problems if it is possible. This will be live and when they finish talking, customer services click to the finish button to commit the conversation to the database.
 
 2.2 Non-Functional Requirements
 
-1)          Page, button and background designs will be appealing and dynamic.
+**Security**
+	There will be personal information and conversations between the users and the customer service, therefore the system must secure. No personal information will be shared with a third party.
 
-2)          No private information will shared with public.
+**Platforms**
+	The users of the FixItUp can reach the system from various devices like IOS, Android devices, and desktop, etc. Since the users of the system can reach from different platforms to their profiles and information, we keep their data in a database. 
+  
+**Usability**
+	The age spectrum of the users can be wide so the interface of the system should be easy to understand and use. The instructions must be clear so that the users can understand. Therefore, FixItUp will be user-friendly and appealing.
+  The database will be an essential part of storage and also search and retrieve operations of FixItUp. The database will have certain levels and views for each type of user. For example, customers cannot alter the information about products, repairs, categories, etc. However, they can view those information.
 
-3)          Internet connection will be required.
+**Performance**
+	Logging in to our system will not take more than 5 seconds. Our database design will be efficient and well designed. It needs to provide users with the best experience possible without any performance issues. Redundancy and any type of inconsistency will be avoided.  Furthermore, the database is also needed to create a multi-user application that has online features like requesting a service or file a complaint.
 
-4)          Software can be accessed on any device with internet connection. IOS, Android, desktop etc.
-
-5)          In order to use the software, users must be older than 15.
 
 ** **
 
 #  3. E/R Diagram
 
 
-![](https://github.com/Seftali/CS-353-Project-Reports/blob/master/ERdiagram.jpg)
+![](https://github.com/Seftali/CS-353-Project-Reports/blob/master/ERdiagram.jpeg)
 
 
-messaged(sender\_ID, receiver\_ID, context)
+complaints(complaintID, content, date)
 
-create\_group(group\_ID,people\_ID)
+CustomerServices(ServiceID)
 
-joinToGroup(group\_ID,people\_ID)
+Employees(EmployeeID, name, email, phone)
 
-send\_comment(comment\_ID, people\_ID)
+Conversation(convID, content, date)
 
-joinToEvent(event\_ID,people\_ID)
+TechStaff(StaffID)
 
-create\_event(event\_ID,people\_ID)
+Customer(customerID, name, email, address)
 
-lives(people\_ID, address\_ID)
+Category(categoryName)
 
-take\_place(event\_ID, address\_ID)
+Products(productID, name)
 
-when(event\_ID, time\_slot)
+Repairments(repID, Status)
 
-event\_belong(event\_ID, category\_ID)
+has(complaintID, convID)
 
-group\_belong(group\_ID, category\_ID)
+handle(complaintID, ServiceID)
 
-group\_event(event\_ID, group\_ID)
+about(complaintID,productID)
 
-event\_has(event\_ID, comment\_ID)
+file(complaintID, customerID)
 
-group\_has(group\_ID, comment\_ID)
+belong(categoryName, productsID)
+
+have(productID, customerID)
+
+Request(customerID, repID)
+
+manage(StaffID, repID)
+
+repair(productID, repID)
 
 # 4.Resources
 
 [https://www.draw.io/](https://www.draw.io/)
 
-[https://www.meetup.com](https://www.meetup.com)
